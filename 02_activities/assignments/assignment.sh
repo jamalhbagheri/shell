@@ -28,22 +28,54 @@ unzip -q rawdata.zip
 # Complete assignment here
 
 # 1. Create a directory named data
+mkdir data
 
 # 2. Move the ./rawdata directory to ./data/raw
+cd data
+mkdir raw
+cd ..
+mv rawdata data
+cd data
+mv rawdata raw
 
 # 3. List the contents of the ./data/raw directory
+cd raw/rawdata
+ls 
 
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
-
+cd ..
+cd ..
+mkdir processed
+cd processed
+mkdir server_logs user_logs event_logs
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
-
+#/c/Users/baran-pc/JB_directory/shell/02_activities/assignments
+cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
+cp *server*.log /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/server_logs
 # 6. Repeat the above step for user logs and event logs
-
+cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
+cp *user*.log /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/user_logs
+cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
+cp *event*.log /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/event_logs
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
-
+cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
+rm *ipaddr*
+cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/user_logs
+rm *ipaddr*
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
-
-
+cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data
+touch inventory.txt
+cd processed/server_logs
+ls >> /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/inventory.txt
+cd ..
+cd user_logs
+ls >> /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/inventory.txt
+cd ..
+cd event_logs
+ls >> /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/inventory.txt
+cd ..
+cd ..
+cat inventory.txt
 ###########################################
 
 echo "Project setup is complete!"
