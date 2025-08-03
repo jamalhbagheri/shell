@@ -75,7 +75,6 @@ cd event_logs
 ls >> /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/inventory.txt
 cd ..
 cd ..
-cat inventory.txt
 ###########################################
 
 echo "Project setup is complete!"
