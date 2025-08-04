@@ -63,19 +63,21 @@ cd ..
 cd processed/user_logs
 rm *ipaddr*
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
-cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data
+cd ..
+cd ..
 touch inventory.txt
 cd processed/server_logs
-ls >> /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/inventory.txt
+ls >> ../../inventory.txt
 cd ..
 cd user_logs
-ls >> /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/inventory.txt
+ls >> ../../inventory.txt
 cd ..
 cd event_logs
-ls >> /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/inventory.txt
+ls >> ../../inventory.txt
 cd ..
 cd ..
 ls
+cat inventory.txt
 ###########################################
 
 echo "Project setup is complete!"
