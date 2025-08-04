@@ -43,9 +43,9 @@ mv rawdata raw
 ls /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
 mkdir /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/dataprocessed
-cd processed
-mkdir server_logs user_logs event_logs
-ls
+mkdir /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/dataprocessed/server_logs
+mkdir /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/dataprocessed/user_logs
+mkdir /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/dataprocessed/event_logs
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
 #/c/Users/baran-pc/JB_directory/shell/02_activities/assignments
 cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
