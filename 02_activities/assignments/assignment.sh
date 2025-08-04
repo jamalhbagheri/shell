@@ -59,7 +59,9 @@ cp *user*.log ../processed/user_logs
 cp *event*.log ../processed/event_logs
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 rm *ipaddr*
-rm *ipaddr* ../processed/user_logs
+cd ..
+cd processed/user_logs
+rm *ipaddr*
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data
 touch inventory.txt
