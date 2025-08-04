@@ -46,10 +46,11 @@ mkdir /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/
 mkdir /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/dataprocessed/server_logs
 mkdir /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/dataprocessed/user_logs
 mkdir /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/dataprocessed/event_logs
+ls /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/dataprocessed
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
 #/c/Users/baran-pc/JB_directory/shell/02_activities/assignments
-cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
-cp *server*.log /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/server_logs
+cp /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata*server*.log /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/server_logs
+ls /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/server_logs
 # 6. Repeat the above step for user logs and event logs
 cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
 cp *user*.log /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/user_logs
