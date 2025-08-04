@@ -32,7 +32,7 @@ unzip -q rawdata.zip
 mkdir data
 # 2. Move the ./rawdata directory to ./data/raw
 cd data
-mkdir data/raw
+mkdir raw
 cd ..
 mv rawdata data
 cd data
@@ -40,11 +40,11 @@ mv rawdata/* raw
 # 3. List the contents of the ./data/raw directory
 ls /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
-mkdir data/processed
-mkdir data/processed/server_logs
-mkdir data/processed/user_logs
-mkdir processed/event_logs
-ls data/processed
+cd ..
+mkdir processed
+cd processed
+mkdir server_logs user_logs event_logs
+ls
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
 cp /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata/*server*.log /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/server_logs
 ls /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/server_logs
