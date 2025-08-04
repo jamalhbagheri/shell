@@ -40,10 +40,9 @@ cd data
 mv rawdata raw
 
 # 3. List the contents of the ./data/raw directory
-cd raw/rawdata
+cd raw
 ls 
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
-cd ..
 cd ..
 mkdir processed
 cd processed
@@ -75,6 +74,7 @@ cd event_logs
 ls >> /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/inventory.txt
 cd ..
 cd ..
+ls
 ###########################################
 
 echo "Project setup is complete!"
