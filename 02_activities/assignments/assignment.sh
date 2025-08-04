@@ -52,10 +52,11 @@ cd ..
 cd ./processed/server_logs
 ls 
 # 6. Repeat the above step for user logs and event logs
-cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
-cp *user*.log /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/user_logs
-cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
-cp *event*.log /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/processed/event_logs
+cd ..
+cd ..
+cd raw
+cp *user*.log ../processed/user_logs
+cp *event*.log ../processed/event_logs
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 cd /c/Users/baran-pc/JB_directory/shell/02_activities/assignments/newproject/data/raw/rawdata
 rm *ipaddr*
